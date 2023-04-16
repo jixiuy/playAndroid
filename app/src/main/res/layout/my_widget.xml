@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.PlayAndroid.AppWidget.Container"
+    android:background="#AAFFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/my_widget"
+    android:theme="@style/Theme.PlayAndroid.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_widget"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2.5dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="打开玩安卓点击此搜索栏"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/tiaozhuan_2"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

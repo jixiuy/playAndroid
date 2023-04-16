@@ -1,0 +1,13 @@
+<litepal>
+    <dbname value="cool_weather" />
+
+    <version value="6" />
+
+    <list>
+        <mapping
+            class="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomePageTwo.search.bean.ItemBean" />
+
+        <mapping
+            class="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.UserBean" />
+    </list>
+</litepal>

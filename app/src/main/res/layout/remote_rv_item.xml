@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#121212"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/remote_title"
+        android:textSize="25sp"
+        android:ellipsize="end"
+        android:text="三十岁了才明白，开始发奋读书。想改变自己的命运和家庭的生活。还来得及" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#646464"
+            android:ellipsize="end"
+            android:id="@+id/remote_author"
+            android:text="作者小蒋" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:layout_marginStart="10dp"
+            android:id="@+id/remote_date"
+            android:text="日期"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#F6F6F6" />
+
+</LinearLayout>

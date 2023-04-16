@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_drawLayout">
+
+<!--    内容区-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
+
+        <include
+            layout="@layout/my_title"
+            android:id="@+id/my_title" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:layout_alignParentTop="true"
+            app:tabIndicator="@drawable/tab"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="#FFFECC6B"
+            app:tabIndicatorGravity="center"
+            app:tabTextColor="#FF868B8F" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F1F1F3">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:id="@+id/drawerLayout"
+        android:clickable="true"
+        android:background="#F5F6FA"
+        android:focusable="true">
+
+        <include layout="@layout/my_drawerlayout"
+            android:id="@+id/headView"/>
+
+        <include layout="@layout/drawer_layout_menu"/>
+
+        <include layout="@layout/drawlayout_exit"
+            android:id="@+id/exit">
+        </include>
+    </LinearLayout>
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/navigationView"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:menu="@menu/my_drawerlayout_menu"-->
+<!--        app:headerLayout="@layout/my_drawerlayout"-->
+<!--        >-->
+
+<!--    </com.google.android.material.navigation.NavigationView>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

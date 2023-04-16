@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="53dp">
+
+    <TextView
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="搜索"
+        android:textColor="#484848"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <ImageView
+
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back"
+        android:contentDescription="TODO" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFF4F4F4"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F4F4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/search"
+                android:contentDescription="TODO" />
+
+            <EditText
+                android:id="@+id/search_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="4dp"
+                android:background="#F4F4F4"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:singleLine="true"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="搜索感兴趣的内容"
+                android:textColor="#484848"
+                android:textColorHighlight="#FFDDDDDD"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSelectHandle="@drawable/abc_text_select_handle_middle_mtrl"
+                android:textSelectHandleLeft="@drawable/abc_text_select_handle_left_mtrl"
+                android:textSelectHandleRight="@drawable/abc_text_select_handle_right_mtrl"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/chahao"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

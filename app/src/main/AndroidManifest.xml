@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.bignerdranch.playandroid"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.bignerdranch.playandroid.util.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+
+        tools:targetApi="31"
+
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.PlayAndroid"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.Homepage"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+
+        </activity>
+
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.RemainDerDialog"
+            android:exported="false"
+            android:theme="@style/MyCollectDialog"/>
+
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyLiquid.LiquidActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.ChooseHead"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialog" />
+
+        <receiver
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.widget.MyWidget"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.bignerdranch.playandroid.android.appwidget.provider"
+                android:resource="@xml/my_widget_info" />
+        </receiver>
+
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.RemoteVIew.DialogActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialog" />
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.CollectFragment.MyCollectDialogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCollectDialog" />
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.SurfaceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.SignUp"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+
+        </activity>
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.SignIn"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.MyDialogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.DisplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.SystemFragment.SystemTwoClass"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomePageTwo.search.search_result.SearchPassage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="android.bignerdranch.playandroid.bottomnlottie.HomePage.HomePageTwo.search.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+
+
+    </application>
+
+</manifest>

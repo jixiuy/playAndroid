@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".bottomnlottie.HomePage.HomeFragment.MyDrawerLayout.SignUp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sign_up_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26999998">
+
+            <EditText
+                android:id="@+id/textView8"
+                android:layout_width="302dp"
+                android:layout_height="70dp"
+                android:background="#71A0E6"
+                android:gravity="center|start"
+                android:hint="User Name"
+                android:paddingStart="30dp"
+                android:textColorHint="#D4DEF8"
+                android:textStyle="bold"
+                android:textColorHighlight="#FFDDDDDD"
+                android:textCursorDrawable="@drawable/sign_up_et_cursor"
+                android:textSelectHandle="@drawable/abc_text_select_handle_middle_mtrl"
+                android:textSelectHandleLeft="@drawable/abc_text_select_handle_left_mtrl"
+                android:textSelectHandleRight="@drawable/abc_text_select_handle_right_mtrl"
+                android:textColor="#EBF0FF"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.41000003">
+
+            <EditText
+                android:id="@+id/sign_up_password"
+                android:layout_width="302dp"
+                android:layout_height="70dp"
+                android:background="#71A0E6"
+                android:gravity="center|start"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:hint="Password"
+                android:textColorHint="#D4DEF8"
+                android:textStyle="bold"
+                android:textColorHighlight="#FFDDDDDD"
+                android:textCursorDrawable="@drawable/sign_up_et_cursor"
+                android:textSelectHandle="@drawable/abc_text_select_handle_middle_mtrl"
+                android:textSelectHandleLeft="@drawable/abc_text_select_handle_left_mtrl"
+                android:textSelectHandleRight="@drawable/abc_text_select_handle_right_mtrl"
+                android:textColor="#EBF0FF"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.56">
+
+            <EditText
+                android:id="@+id/textView6"
+                android:layout_width="302dp"
+                android:layout_height="70dp"
+                android:background="#71A0E6"
+                android:gravity="center|start"
+                android:hint="Repeat Password"
+                android:textColorHint="#D4DEF8"
+                android:paddingStart="30dp"
+                android:textStyle="bold"
+                android:textColorHighlight="#FFDDDDDD"
+                android:textCursorDrawable="@drawable/sign_up_et_cursor"
+                android:textSelectHandle="@drawable/abc_text_select_handle_middle_mtrl"
+                android:textSelectHandleLeft="@drawable/abc_text_select_handle_left_mtrl"
+                android:textSelectHandleRight="@drawable/abc_text_select_handle_right_mtrl"
+                android:textColor="#EBF0FF"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.78">
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="#3545D9"
+
+                android:gravity="center"
+                android:text="Join Today"
+                android:textColor="@color/white"
+                android:textColorHint="#D4DEF8"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/back_sign_in"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/back_white"
+            android:contentDescription="TODO" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
